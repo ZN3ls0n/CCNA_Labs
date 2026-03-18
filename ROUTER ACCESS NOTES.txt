@@ -1,0 +1,22 @@
+==================
+ROUTER ACCESS NOTES
+==================
+
+--------------------------
+Branch Office
+Console pass: router2
+Privilege exec pass: router2exec
+
+SSH
+Username: routeruse1
+Pass: routerpass1
+-----------------------------
+--------------------------
+Remote Office
+Console pass: router1
+Privilege exec pass: router1exec
+
+SSH
+Username: routeruse2
+Pass: routerpass2
+----------------------------

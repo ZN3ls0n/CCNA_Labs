@@ -1,0 +1,43 @@
+===============
+ACCESS NOTES
+===============
+----------------
+BR-SW-1
+Console pass: switch0
+Privilege exec pass: switch0exec
+
+SSH
+Username: rauthuse1
+Pass: rpassuse1
+---------------------
+
+-----------------------
+BR-SW-2
+Console pass: switch2
+Privilege exec pass: switch2exec
+
+SSH
+Username: swauthuse2
+Pass: swpassuse2
+-------------------------
+
+-------------------------
+RE-SW-1
+Console pass: switch1exec
+Privilege exec pass: switch1
+
+SSH
+Username: swauthuse1
+Pass: swpassuse1
+-------------------------
+
+------------------------
+RE-SW-2
+Console pass: sw3ex
+Privilege exec pass: switch3co
+
+SSH
+Username: swauthuse3 
+Pass: swpassuse3
+-------------------------------
+ 
