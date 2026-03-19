@@ -1,7 +1,7 @@
 # Lab Objective
 
 This is the first of a multi-phase lab of building and simulating an enterprise network. In this first phase, I implemented secure device management practices and validated connectiovity. 
-This will be the foundation of lbs going forward. 
+This will be the foundation of labs going forward. 
 
 The lab simulates two network connected sites - a branch office and a remote office - with routers and access switches. I enabled administrative access on the switches and routers so users with authorized access can access them. 
 Administrative access to network devices is secured using console protection, privilege mode security, and SSH remote access restricted to a Management VLAN. Realistically, this is not enough to secure your physical network. 
