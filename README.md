@@ -4,7 +4,6 @@ This project documents my hands-on labs as I prepare for the CCNA by designing a
 
 These labs are structured to simulate a real-world network environment, with each phase introducing a new layer of security, connectivity, and functionality. 
 
----
 
 ## Project Goals
 
@@ -13,7 +12,6 @@ These labs are structured to simulate a real-world network environment, with eac
 - Implement security best practices from the ground up  
 - Build and document configurations in a structured, scalable way  
 
----
 
 ## Lab Structure
 
@@ -33,7 +31,6 @@ Includes:
 
 See details: `part-1-secure-management/`
 
----
 
 ## Upcoming Phases
 
@@ -50,14 +47,13 @@ See details: `part-1-secure-management/`
   - Dynamic routing protocols (OSPF/EIGRP)  
   - WAN optimization and redundancy  
 
----
 
 ## Tools & Technologies
 
 - Cisco Packet Tracer  
 - CLI-based configuration (IOS)  
 
----
+
 
 ## Feedback
 
