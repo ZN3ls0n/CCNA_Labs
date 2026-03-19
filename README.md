@@ -2,7 +2,7 @@
 
 This project documents my hands-on labs as I prepare for the CCNA by designing and building a multi-phase enterprise-style network lab.
 
-These labs are structured to simulate a real-world network environment, with each phase introducing a new layer of security, connectivity, and funcitonality to go along with my studies.
+These labs are structured to simulate a real-world network environment, with each phase introducing a new layer of security, connectivity, and functionality. 
 
 ---
 
