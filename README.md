@@ -29,8 +29,6 @@ Includes:
 - Management VLAN implementation  
 - End-to-end connectivity testing (ICMP)  
 
-See details: `part-1-secure-management/`
-
 
 ## Upcoming Phases
 
