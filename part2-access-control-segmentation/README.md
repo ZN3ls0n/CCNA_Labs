@@ -76,6 +76,8 @@ Extended IP access list 101
     10 deny tcp any any eq telnet
 </code></pre>
 
+Use <code>show running-config</code> or <code>show access-lists</code> on either router to see the full access control access lists. 
+
 ## Port Security
 Port security is configured on access switch ports connected to PCs to prevent unauthorized device access. 
 ### Port Security Configuration Guidelines
@@ -87,8 +89,34 @@ Port security is configured on access switch ports connected to PCs to prevent u
 <li>Port security is enabled on access switches' ports connected to client or management PCs</li>
 <li>There is no port security enabled on trunk links between the switch and router. </li>
 <li>Each port should limit to one configured MAC address</li>
+<pre><code>conf t
+int {interface}
+switchport port-security
+switchport port-security mac-address sticky</code></pre>
 </ul>
+
+To veriify MAC address on the interface, ping the default gateway to verify connectivity. Once verified, use <code>show run</code>. 
 
 ## Network Configuration
 ## Trunk Lines
-Trunk lines are used to carry Management VLAN and Data VLAN traffic between ther access switch and router. All trunk lines use 802.1q encapsulation. 
+Trunk lines are used to carry Management VLAN and Data VLAN traffic between ther access switch and router. This allows multiple VLANs to traverse a single physical link. All trunk lines use 802.1q encapsulation. 
+
+The network currently uses the VLAN 1 as the native VLAN. <b>This is a temporary solution to demonstrate connectivity. The lab will implement more VLANs, so data traffic will be moved across those VLANS.</b>
+<pre><code>interface FastEthernet0/1
+ switchport trunk allowed vlan 1,10
+ switchport mode trunk
+ switchport nonegotiate
+</code></pre>
+
+## Router Subinterface Configuration
+Each site includes a Management VLAN mapped to a router subinterface. The Management VLAN is configured with a subinterface to allow SSH access and ICMP attempts to verify connectivity. 
+
+<pre><code>conf t
+interface GigabitEthernet0/1.10
+ encapsulation dot1Q 10
+ ip address 172.16.10.1 255.255.255.0
+ ip access-group MGMT-Router in</code></pre>
+
+ This step is important to ensure the intended rules in the access control lists operate as intended. If implemented on the interface, unintended traffic may pass. To see the full router subinterface configurations, use <code>show run</code>. 
+
+ 
