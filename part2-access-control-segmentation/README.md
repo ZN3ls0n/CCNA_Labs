@@ -162,6 +162,7 @@ Port security was configured on access ports to prevent unauthorized devices fro
 - Only authorized devices are allowed to connect  
 
 ![Port Security Enabled](Port_Security_Enabled.png)
+![Port Security Err-Disabled](Port_Security_Err_Dis.png)
 
 ---
 
