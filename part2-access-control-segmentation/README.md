@@ -138,7 +138,7 @@ The Management VLAN was tested to confirm that authorized hosts can successfully
 
 ![Telnet Blocked](Block_TELNET.png)
 
----
+
 
 ### Data VLAN Connectivity
 
@@ -150,7 +150,7 @@ The Data VLAN was tested to ensure that user devices are restricted from perform
 
 ![Data PCs Telnet Blocked](Block_TELNET_DATA_PCs.png)
 
----
+
 
 ### Port Security Verification
 
@@ -164,7 +164,7 @@ Port security was configured on access ports to prevent unauthorized devices fro
 ![Port Security Enabled](Port_Security_Enabled.png)
 ![Port Security Err-Disabled](Port_Security_Err_Dis.png)
 
----
+
 
 ## Summary
 
