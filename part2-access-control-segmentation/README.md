@@ -39,6 +39,7 @@ Each site includes:
 </ul>
 
 # Security Configuration
+The console passwords for the switches have been replaced with a username and password. See updated credentials on the topology. 
 
 ## Access Control Lists
 Access control lists are configured on both the branch and remote routers to enforce the following design goals.
@@ -119,4 +120,11 @@ interface GigabitEthernet0/1.10
 
 This step is important to ensure the intended rules in the access control lists operate as intended. If implemented on the interface, unintended traffic may pass. To see the full router subinterface configurations, use <code>show run</code>. 
 
+# Verification
+Verify Management PCs Connectivity
+<img>
+
+Verify Data PCs Connectivity
+
+Port Security
  
