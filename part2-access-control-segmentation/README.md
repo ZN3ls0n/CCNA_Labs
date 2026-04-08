@@ -121,10 +121,58 @@ interface GigabitEthernet0/1.10
 This step is important to ensure the intended rules in the access control lists operate as intended. If implemented on the interface, unintended traffic may pass. To see the full router subinterface configurations, use <code>show run</code>. 
 
 # Verification
-Verify Management PCs Connectivity
-<img>
 
-Verify Data PCs Connectivity
+## Management VLAN Connectivity
 
-Port Security
+The Management VLAN was tested to confirm that authorized hosts can successfully communicate with the router and perform secure management operations.
+
+**Successful Connectivity**
+- Management PCs can ping the default gateway  
+- Management PCs can establish SSH sessions to the router  
+
+![Management PC Ping Gateway](MGMT_PING_GATEWAY.png)
+![Management PC SSH Verification](MGMT_PC_SSH_VERIFY.png)
+
+**Security Enforcement**
+- Telnet access is blocked, ensuring only secure remote access (SSH) is permitted  
+
+![Telnet Blocked](Block_TELNET.png)
+
+---
+
+### Data VLAN Connectivity
+
+The Data VLAN was tested to ensure that user devices are restricted from performing management actions.
+
+**Restricted Access**
+- Data PCs are unable to initiate Telnet sessions  
+- Data PCs are prevented from accessing management services on the router  
+
+![Data PCs Telnet Blocked](Block_TELNET_DATA_PCs.png)
+
+---
+
+### Port Security Verification
+
+Port security was configured on access ports to prevent unauthorized devices from connecting to the network.
+
+**Security Features Confirmed**
+- Sticky MAC address learning is enabled  
+- Each port is limited to a single MAC address  
+- Only authorized devices are allowed to connect  
+
+![Port Security Enabled](Port_Security_Enabled.png)
+
+---
+
+## Summary
+
+The verification process confirms that:
+
+- Management devices can securely access the router using SSH  
+- Data devices are restricted from management access  
+- Telnet is fully blocked across the network  
+- Port security prevents unauthorized device connections  
+
+These results demonstrate that access control policies and Layer 2 security mechanisms are functioning as intended.
  
